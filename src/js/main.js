@@ -4,6 +4,7 @@ import forms from "./modules/forms";
 import modals from "./modules/modal";
 import showMoreStyles from "./modules/showMoreStyles";
 import sliders from "./modules/sliders";
+import pictureSize from "./modules/pictureSize";
 
 document.addEventListener("DOMContentLoaded", () => {
   "use strict";
@@ -27,4 +28,5 @@ document.addEventListener("DOMContentLoaded", () => {
     state
   );
   filters(".portfolio-menu", ".portfolio-block", ".portfolio-no");
+  pictureSize(".sizes-block");
 });
