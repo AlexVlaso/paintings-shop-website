@@ -1,5 +1,6 @@
 import forms from "./modules/forms";
 import modals from "./modules/modal";
+import showMoreStyles from "./modules/showMoreStyles";
 import sliders from "./modules/sliders";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -13,4 +14,5 @@ document.addEventListener("DOMContentLoaded", () => {
   );
   sliders(".main-slider-item", "vertical");
   forms();
+  showMoreStyles(".button-styles", ".styles-2");
 });

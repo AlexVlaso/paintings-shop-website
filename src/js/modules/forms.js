@@ -60,7 +60,6 @@ const forms = (state) => {
       let api = item.classList.contains("form_calc")
         ? "assets/server.php"
         : "assets/server2.php";
-      console.log(api);
 
       postData("assets/server.php", formdata).then((data) => {
         console.log(data);
