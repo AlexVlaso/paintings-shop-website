@@ -51,6 +51,11 @@ const forms = (state) => {
       item.parentNode.append(message);
 
       const formdata = new FormData(item);
+      if (item.classList.contains("form_calc")) {
+        for (let key in state) {
+          formdata.append(key, state[key]);
+        }
+      }
 
       let api = item.classList.contains("form_calc")
         ? "assets/server.php"
