@@ -14,5 +14,5 @@ document.addEventListener("DOMContentLoaded", () => {
   );
   sliders(".main-slider-item", "vertical");
   forms();
-  showMoreStyles(".button-styles", ".styles-2");
+  showMoreStyles(".button-styles", "#styles .row");
 });

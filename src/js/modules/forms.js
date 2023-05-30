@@ -1,3 +1,4 @@
+import { postData } from "../services/requsts";
 const forms = (state) => {
   const form = document.querySelectorAll("form");
   const inputs = document.querySelectorAll("input");
@@ -16,13 +17,7 @@ const forms = (state) => {
       item.value = "";
     });
   };
-  const postData = async (url, data) => {
-    const res = await fetch(url, {
-      method: "POST",
-      body: data,
-    });
-    return await res.text();
-  };
+
   uploads.forEach((item) => {
     item.addEventListener("input", () => {
       const status = item.previousElementSibling;
