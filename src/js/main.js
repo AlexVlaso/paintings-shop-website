@@ -1,3 +1,4 @@
+import filters from "./modules/filters";
 import calculator from "./modules/calculator";
 import forms from "./modules/forms";
 import modals from "./modules/modal";
@@ -25,4 +26,5 @@ document.addEventListener("DOMContentLoaded", () => {
     ".calc-price",
     state
   );
+  filters(".portfolio-menu", ".portfolio-block", ".portfolio-no");
 });

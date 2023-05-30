@@ -14,7 +14,6 @@ const calculator = (
   let sum = 0;
   const calcSum = () => {
     sum = Math.round(+size.value * +material.value + +option.value);
-    console.log("Test");
     if (!size.value || !material.value) {
       result.textContent =
         "Для расчета нужно выбрать размер картины и материал картины";
