@@ -6,6 +6,7 @@ import showMoreStyles from "./modules/showMoreStyles";
 import sliders from "./modules/sliders";
 import pictureSize from "./modules/pictureSize";
 import acordion from "./modules/acordion";
+import burger from "./modules/burger";
 
 document.addEventListener("DOMContentLoaded", () => {
   "use strict";
@@ -31,4 +32,5 @@ document.addEventListener("DOMContentLoaded", () => {
   filters(".portfolio-menu", ".portfolio-block", ".portfolio-no");
   pictureSize(".sizes-block");
   acordion(".accordion-heading", ".accordion-block");
+  burger(".burger", ".burger-menu");
 });
